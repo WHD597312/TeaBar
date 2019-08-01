@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_red"
+    tools:context=".TestActivity2">
+
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rsb_mode="single"
+        app:rsb_indicator_show_mode="alwaysShow"
+        app:rsb_indicator_height="60dp"
+        app:rsb_indicator_width="60dp"
+        app:rsb_indicator_margin="2dp"
+        app:rsb_thumb_size="@dimen/sp_15"
+        app:rsb_indicator_padding_top="@dimen/dp_15"
+        app:rsb_indicator_text_color="#333333"
+        app:rsb_thumb_drawable="@mipmap/button"
+        app:rsb_indicator_text_size="@dimen/sp_14"
+        app:rsb_tick_mark_mode="other"
+        app:rsb_indicator_background_color="#ffffff"
+        app:rsb_indicator_drawable="@mipmap/button"
+        />
+
+</LinearLayout>

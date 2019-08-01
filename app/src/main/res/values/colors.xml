@@ -1,56 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="login_black">#101010</color>
-    <color name="social_gray">#777777</color>
-    <color name="login_gray">#555555</color>
-    <color name="white">#FFFFFF</color>
-    <color name="pink1">#FF638D</color>
-    <color name="pink2">#93FF638D</color>
-    <color name="black">#000000</color>
-    <!-- 顶部选项卡下划线背景色 -->
-    <color name="tab_auto_normal_top">#00ffffff</color>
-    <color name="tab_auto_selected_top">#FE4D76</color>
-    <!-- 顶部选项卡文本颜色 -->
-    <color name="tab_text_normal_top">#BBBBBB</color>
-    <color name="tab_text_selected_top">#FE4D76</color>
-    <color name="main_title1">#D7D7D7</color>
-    <color name="blue">#33b5e5</color>
-    <color name="line_normal">#2DD0CF</color>
-    <color name="main_theme_color">#0195ff</color>
-    <color name="viewfinder_mask">#60000000</color>
-    <color name="result_view">#b0000000</color>
-    <color name="possible_result_points">#c0ffff00</color>
-    <color name="viewfinder_laser">#ffcc0000</color>
-    <color name="color_8290AF">#8290AF</color>
-    <color name="color_232323">#232323</color>
-    <color name="color_aeaeae">#aeaeae</color>
-    <color name="im_social_dig_name_bg">#DDDDDD</color>
-    <color name="im_font_color_text_hint">#abb1b6</color>
-    <color name="im_line_color">#dadada</color>
-    <!--========================-->
-    <color name="praise_item_default">#333333</color>
-    <color name="praise_item_selector_default">#cccccc</color>
-    <color name="praise_item">#8290AF</color>
-    <color name="bg_no_photo">#EEEEEE</color>
-    <color name="default_clickable_color">#cccccc</color>
-    <color name="basic_color_primary">#373b3e</color>
-    <color name="name_selector_color">#cccccc</color>
-    <color name="transparent">#00ffffff</color>
-    <!--<color name="chat_text_color">#0B1816</color>-->
-    <color name="chat_text_color">#333333</color>
-    <color name="chat_text_color1">#ffffff</color>
-    <color name="message_already_receipt">#999999</color>
-    <color name="message_no_receipt">#2DD0CF</color>
-    <color name="send_file_action_bar">#2C2C2C</color>
-    <color name="send_file_desc_color">#808080</color>
-    <color name="send_file_action_bar_selected">#2DD0CF</color>
-    <color name="jmui_jpush_blue">#2DD0CF</color>
-    <color name="nomal_green">#2bdca3</color>
-    <color name="card1">#37dbc2</color>
-    <color name="card2">#81fbe6</color>
-    <color name="main_title">#33000000</color>
-    <color name="main_tit1">#4BE6C0</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_red">#f00</color>
+    <color name="color_blue">#0054ff</color>
+    <color name="color_yellow">#ffd200</color>
+    <color name="color_light_blut">#39e0b9</color>
+    <color name="color_purple">#ae00ff</color>
+    <color name="color_gray">#eeeeee</color>
+    <color name="color_refersh">#696969</color>
 </resources>

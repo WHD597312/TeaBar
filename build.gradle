@@ -6,10 +6,15 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'com.android.tools.build:gradle:3.3.2'
+//        classpath 'com.android.tools.build:gradle:4.10.1'
         classpath'org.greenrobot:greendao-gradle-plugin:3.1.0'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -23,6 +28,10 @@ allprojects {
         jcenter()
         maven { url 'https://jitpack.io'  }
         maven { url "https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 }
 

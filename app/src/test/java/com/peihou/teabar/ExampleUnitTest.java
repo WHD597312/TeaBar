@@ -1,4 +1,4 @@
-package teabar.ph.com.teabar;
+package com.peihou.teabar;
 
 import org.junit.Test;
 
