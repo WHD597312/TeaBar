@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:id="@+id/scrollView"
     >
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_main_1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fafafa"
-        android:layout_alignBottom="@+id/tv_sbxq"
-        android:layout_marginBottom="-15dp"
-        >
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#c9c9c9"
-            android:layout_alignParentBottom="true"
-            />
-
-    </RelativeLayout>
+        />
     <ImageView
         android:id="@+id/iv_equ_fh"
+        android:layout_below="@+id/tv_main_1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="centerInside"
-        android:src="@mipmap/login_back"
+        android:src="@mipmap/ic_launcher"
         />
     <TextView
         android:id="@+id/tv_sbxq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/equ_light_light"
+        android:text="llll"
         android:layout_below="@+id/iv_equ_fh"
         android:layout_marginLeft="17dp"
         android:textSize="30sp"
-        android:textColor="@color/login_black"
+        android:textColor="#333333"
         />
 
 
@@ -45,7 +40,7 @@
         android:layout_below="@+id/tv_sbxq"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:layout_marginTop="10dp"
         android:paddingTop="30dp"
         android:paddingBottom="10dp"
         >
@@ -56,15 +51,14 @@
 
         <ImageView
             android:id="@+id/img_hue"
-            android:layout_width="@dimen/hue_alpha_width"
+            android:layout_width="@dimen/dp_35"
             android:layout_height="match_parent"
             android:layout_alignTop="@+id/color_plate"
             android:layout_alignBottom="@+id/color_plate"
             android:layout_marginLeft="40dp"
             android:layout_toRightOf="@+id/color_plate"
             android:scaleType="fitXY"
-            android:src="@drawable/hue_list"
-
+            android:src="@mipmap/hue_list"
             />
     <ImageView
         android:id="@+id/hue_cursor"
@@ -72,11 +66,11 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/color_plate"
         android:layout_marginLeft="35dp"
-        android:src="@mipmap/light_choose"/>
+        android:src="@mipmap/img_hue"/>
 
 
 
-    <teabar.ph.com.teabar.view.ColorPlateView
+    <com.peihou.teabar.ColorPlateView
         android:id="@+id/color_plate"
         android:layout_width="240dp"
         android:layout_height="240dp"
@@ -88,7 +82,7 @@
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:scaleType="matrix"
-        android:src="@drawable/img_plate_cursor"/>
+        android:src="@mipmap/ic_launcher"/>
         <RelativeLayout
             android:id="@+id/rl_equ_light"
             android:layout_width="wrap_content"
@@ -97,53 +91,21 @@
             android:layout_marginTop="25dp"
             android:layout_marginLeft="17dp"
             >
-
+            <TextView
+                android:id="@+id/tv_light_bj"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/ic_launcher"
+                />
             <ImageView
-                android:id="@+id/iv_choose_light"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@mipmap/light_light"
+                android:src="@mipmap/ic_launcher"
                 android:layout_centerInParent="true"
                 />
 
         </RelativeLayout>
-        <TextView
-            android:id="@+id/tv_light_bright"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/equ_mode_ld"
-            android:layout_below="@+id/rl_equ_light"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#333333"
-            android:textSize="15sp"
-            />
-
-        <com.jaygoo.widget.RangeSeekBar
-            android:layout_below="@+id/tv_light_bright"
-            android:id="@+id/seekbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_centerHorizontal="true"
-            app:rsb_mode="single"
-            app:rsb_progress_color="@color/nomal_green"
-            app:rsb_progress_default_color="@color/rsbColorSeekBarDefault"
-            app:rsb_progress_radius="8dp"
-            app:rsb_thumb_drawable="@mipmap/wash_y"
-            app:rsb_thumb_size="50dp"
-            app:rsb_tick_mark_mode="other"
-            app:rsb_tick_mark_text_margin="14dp"
-            app:rsb_tick_mark_text_size="18sp"
-            app:rsb_progress_height="15dp"
-            android:layout_marginTop="10dp"
-            app:rsb_thumb_inactivated_drawable="@null"
-            app:rsb_max="10"
-            app:rsb_min="1"
-            />
-
-        <Button
+    <Button
         android:id="@+id/tv_color"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -152,13 +114,10 @@
         android:textSize="16sp"
         android:layout_alignParentBottom="true"
         android:paddingBottom="10dp"
-        android:text="@string/equ_dia_esure1"
-        android:textColor="@color/white"
-        android:background="@mipmap/login_button"
-        android:layout_marginBottom="10dp"
-
+        android:text="ffffff"
+        android:layout_marginBottom="20dp"
         />
 
     </RelativeLayout>
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
